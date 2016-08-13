@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="HeadlineView" customModule="CustomAlertControllerTest" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="451" height="195"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cRF-wt-i86">
+                    <rect key="frame" x="0.0" y="0.0" width="451" height="112"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SDe-Rd-nHu">
+                            <rect key="frame" x="16" y="43" width="331" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z3C-1u-dAQ">
+                            <rect key="frame" x="16" y="16" width="331" height="19.5"/>
+                            <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mU5-d1-sK5">
+                            <rect key="frame" x="355" y="16" width="80" height="80"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="80" id="NF8-Cc-qwc"/>
+                                <constraint firstAttribute="height" constant="80" id="Rvf-x3-Fhd"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="SDe-Rd-nHu" firstAttribute="top" secondItem="z3C-1u-dAQ" secondAttribute="bottom" constant="8" id="0sA-7h-2ro"/>
+                        <constraint firstItem="mU5-d1-sK5" firstAttribute="centerY" secondItem="cRF-wt-i86" secondAttribute="centerY" id="820-3M-8ia"/>
+                        <constraint firstItem="mU5-d1-sK5" firstAttribute="top" relation="greaterThanOrEqual" secondItem="cRF-wt-i86" secondAttribute="top" constant="16" id="ASH-uh-KRz"/>
+                        <constraint firstItem="mU5-d1-sK5" firstAttribute="leading" secondItem="z3C-1u-dAQ" secondAttribute="trailing" constant="8" id="BIu-un-e9c"/>
+                        <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="SDe-Rd-nHu" secondAttribute="bottom" constant="16" id="DeR-OT-KmF"/>
+                        <constraint firstAttribute="trailing" secondItem="mU5-d1-sK5" secondAttribute="trailing" constant="16" id="PnI-UK-VEs"/>
+                        <constraint firstItem="mU5-d1-sK5" firstAttribute="leading" secondItem="SDe-Rd-nHu" secondAttribute="trailing" constant="8" id="Q1r-SW-WWm"/>
+                        <constraint firstItem="z3C-1u-dAQ" firstAttribute="top" secondItem="cRF-wt-i86" secondAttribute="top" constant="16" id="X97-qv-hPv"/>
+                        <constraint firstItem="z3C-1u-dAQ" firstAttribute="leading" secondItem="cRF-wt-i86" secondAttribute="leading" constant="16" id="Z0Y-r6-DOc"/>
+                        <constraint firstAttribute="bottom" secondItem="mU5-d1-sK5" secondAttribute="bottom" priority="750" constant="16" id="bsi-G8-Y2I"/>
+                        <constraint firstItem="SDe-Rd-nHu" firstAttribute="leading" secondItem="cRF-wt-i86" secondAttribute="leading" constant="16" id="bws-cj-gnr"/>
+                        <constraint firstAttribute="bottom" secondItem="mU5-d1-sK5" secondAttribute="bottom" constant="16" id="ttj-PB-kLo"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="ttj-PB-kLo"/>
+                        </mask>
+                    </variation>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="cRF-wt-i86" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Hzk-JF-fqU"/>
+                <constraint firstAttribute="trailing" secondItem="cRF-wt-i86" secondAttribute="trailing" id="dCU-ze-aT9"/>
+                <constraint firstItem="cRF-wt-i86" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="hxF-Zc-gHl"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="contentView" destination="cRF-wt-i86" id="2ue-gA-OEo"/>
+                <outlet property="detailLabel" destination="SDe-Rd-nHu" id="W0Z-qy-BR1"/>
+                <outlet property="imageView" destination="mU5-d1-sK5" id="oU7-77-39D"/>
+                <outlet property="titleLabel" destination="z3C-1u-dAQ" id="BEE-Rn-oZg"/>
+            </connections>
+            <point key="canvasLocation" x="317.5" y="228.5"/>
+        </view>
+    </objects>
+</document>

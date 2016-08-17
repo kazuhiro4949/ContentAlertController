@@ -24,7 +24,5 @@ Pod::Spec.new do |s|
 
   s.source_files = 'ContentAlertController/*'
 
-  s.resource_bundles = {
-    'ContentAlertController' => ['*.storyboard']
-  }
+  s.resources = ['ContentAlertController/*.storyboard', 'ContentAlertController/*.xib']
 end

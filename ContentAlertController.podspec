@@ -23,5 +23,5 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '9.0'
 
   s.source_files = 'ContentAlertController/*'
-  s.resources = ["ContentAlertController/ContentAlertController/*.storyboard"]
+  s.resource = ["Resource/ContentAlertController-Resrouce.bundle"]
 end

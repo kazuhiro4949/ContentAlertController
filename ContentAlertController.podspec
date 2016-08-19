@@ -22,7 +22,7 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '9.0'
 
-  s.source_files = 'ContentAlertController/*'
+  s.source_files = 'ContentAlertController/*.swift'
 
-  s.resources = ['ContentAlertController/*.storyboard', 'ContentAlertController/*.xib']
+  s.resources = ['ContentAlertController/Assets/*.storyboard', 'ContentAlertController/Assets/*.xib']
 end

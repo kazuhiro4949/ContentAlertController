@@ -8,7 +8,7 @@
         <!--Regular Alert Controller-->
         <scene sceneID="Ik3-n2-xi7">
             <objects>
-                <viewController id="YJg-8l-w1Z" customClass="RegularAlertController" customModule="CustomAlertControllerTest" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="YJg-8l-w1Z" customClass="RegularAlertController" customModule="ContentAlertController" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="EAd-oO-aAd"/>
                         <viewControllerLayoutGuide type="bottom" id="CPZ-9Q-wHu"/>
@@ -32,7 +32,7 @@
                                                         <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                         <subviews>
-                                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6EZ-ya-m7o" customClass="CompactAlertButton" customModule="CustomAlertControllerTest" customModuleProvider="target">
+                                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6EZ-ya-m7o" customClass="CompactAlertButton" customModule="ContentAlertController" customModuleProvider="target">
                                                                 <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                             </view>
@@ -166,14 +166,14 @@
         <!--Regular Alert Table View Controller-->
         <scene sceneID="2h1-3r-qW4">
             <objects>
-                <tableViewController id="dSE-GX-j0u" customClass="RegularAlertTableViewController" customModule="CustomAlertControllerTest" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="dSE-GX-j0u" customClass="RegularAlertTableViewController" customModule="ContentAlertController" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="bBA-xH-2l0">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="88"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="reuseIdentifier" textLabel="ZXU-2C-3wV" style="IBUITableViewCellStyleDefault" id="ySn-RA-ile" customClass="RegularAlertTableViewCell" customModule="CustomAlertControllerTest" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="reuseIdentifier" textLabel="ZXU-2C-3wV" style="IBUITableViewCellStyleDefault" id="ySn-RA-ile" customClass="RegularAlertTableViewCell" customModule="ContentAlertController" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ySn-RA-ile" id="IAi-cM-qUR">

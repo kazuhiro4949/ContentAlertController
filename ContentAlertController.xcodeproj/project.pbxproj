@@ -7,24 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6E74F60C1D66B4C900A1BF63 /* CompactAlertViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E74F60B1D66B4C900A1BF63 /* CompactAlertViewController.xib */; };
+		6E74F60E1D66B4D700A1BF63 /* FlyerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E74F60D1D66B4D700A1BF63 /* FlyerView.xib */; };
+		6E74F6101D66B4DE00A1BF63 /* HeadlineView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E74F60F1D66B4DE00A1BF63 /* HeadlineView.xib */; };
+		6E74F6131D66B4E500A1BF63 /* RegularAlertController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E74F6111D66B4E500A1BF63 /* RegularAlertController.storyboard */; };
+		6E74F6141D66B4E500A1BF63 /* RegularAlertTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E74F6121D66B4E500A1BF63 /* RegularAlertTableViewCell.xib */; };
 		6EB566BF1D5F88E5004702C1 /* ContentAlertController.h in Headers */ = {isa = PBXBuildFile; fileRef = 6EB566BE1D5F88E5004702C1 /* ContentAlertController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6EB566C61D5F88E5004702C1 /* ContentAlertController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EB566BB1D5F88E5004702C1 /* ContentAlertController.framework */; };
 		6EB566CB1D5F88E5004702C1 /* ContentAlertControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EB566CA1D5F88E5004702C1 /* ContentAlertControllerTests.swift */; };
 		6EB566DD1D5F8A2B004702C1 /* AlertPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EB566DB1D5F8A2B004702C1 /* AlertPresentationController.swift */; };
 		6EB566DE1D5F8A2B004702C1 /* ActionSheetPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EB566DC1D5F8A2B004702C1 /* ActionSheetPresentationController.swift */; };
-		6EB566E31D5F8A5C004702C1 /* CompactAlertViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6EB566E01D5F8A5C004702C1 /* CompactAlertViewController.xib */; };
 		6EB566E41D5F8A5C004702C1 /* CompactAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EB566E11D5F8A5C004702C1 /* CompactAlertViewController.swift */; };
 		6EB566E51D5F8A5C004702C1 /* CompactAlertButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EB566E21D5F8A5C004702C1 /* CompactAlertButton.swift */; };
-		6EB566EC1D5F8A7F004702C1 /* RegularAlertController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6EB566E71D5F8A7F004702C1 /* RegularAlertController.storyboard */; };
 		6EB566ED1D5F8A7F004702C1 /* RegularAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EB566E81D5F8A7F004702C1 /* RegularAlertController.swift */; };
 		6EB566EE1D5F8A7F004702C1 /* RegularAlertTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EB566E91D5F8A7F004702C1 /* RegularAlertTableViewController.swift */; };
 		6EB566EF1D5F8A7F004702C1 /* RegularAlertTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EB566EA1D5F8A7F004702C1 /* RegularAlertTableViewCell.swift */; };
-		6EB566F01D5F8A7F004702C1 /* RegularAlertTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6EB566EB1D5F8A7F004702C1 /* RegularAlertTableViewCell.xib */; };
 		6EB566F31D5F8AB8004702C1 /* AlertAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EB566F21D5F8AB8004702C1 /* AlertAnimator.swift */; };
 		6EB566F61D5F8ACB004702C1 /* AlertControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EB566F51D5F8ACB004702C1 /* AlertControllerFactory.swift */; };
-		6EB566FA1D5F8AEE004702C1 /* HeadlineView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6EB566F81D5F8AEE004702C1 /* HeadlineView.xib */; };
 		6EB566FB1D5F8AEE004702C1 /* HeadlineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EB566F91D5F8AEE004702C1 /* HeadlineView.swift */; };
-		6EB566FF1D5F8B00004702C1 /* FlyerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6EB566FD1D5F8B00004702C1 /* FlyerView.xib */; };
 		6EB567001D5F8B00004702C1 /* FlyerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EB566FE1D5F8B00004702C1 /* FlyerView.swift */; };
 		6EB567071D5F8B0F004702C1 /* AlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EB567011D5F8B0F004702C1 /* AlertController.swift */; };
 		6EB567081D5F8B0F004702C1 /* AlertAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EB567021D5F8B0F004702C1 /* AlertAction.swift */; };
@@ -45,6 +45,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6E74F60B1D66B4C900A1BF63 /* CompactAlertViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CompactAlertViewController.xib; path = Assets/CompactAlertViewController.xib; sourceTree = "<group>"; };
+		6E74F60D1D66B4D700A1BF63 /* FlyerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FlyerView.xib; path = Assets/FlyerView.xib; sourceTree = "<group>"; };
+		6E74F60F1D66B4DE00A1BF63 /* HeadlineView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = HeadlineView.xib; path = Assets/HeadlineView.xib; sourceTree = "<group>"; };
+		6E74F6111D66B4E500A1BF63 /* RegularAlertController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = RegularAlertController.storyboard; path = Assets/RegularAlertController.storyboard; sourceTree = "<group>"; };
+		6E74F6121D66B4E500A1BF63 /* RegularAlertTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RegularAlertTableViewCell.xib; path = Assets/RegularAlertTableViewCell.xib; sourceTree = "<group>"; };
 		6EB566BB1D5F88E5004702C1 /* ContentAlertController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ContentAlertController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6EB566BE1D5F88E5004702C1 /* ContentAlertController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContentAlertController.h; sourceTree = "<group>"; };
 		6EB566C01D5F88E5004702C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -53,19 +58,14 @@
 		6EB566CC1D5F88E5004702C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6EB566DB1D5F8A2B004702C1 /* AlertPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertPresentationController.swift; sourceTree = "<group>"; };
 		6EB566DC1D5F8A2B004702C1 /* ActionSheetPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionSheetPresentationController.swift; sourceTree = "<group>"; };
-		6EB566E01D5F8A5C004702C1 /* CompactAlertViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CompactAlertViewController.xib; sourceTree = "<group>"; };
 		6EB566E11D5F8A5C004702C1 /* CompactAlertViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompactAlertViewController.swift; sourceTree = "<group>"; };
 		6EB566E21D5F8A5C004702C1 /* CompactAlertButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompactAlertButton.swift; sourceTree = "<group>"; };
-		6EB566E71D5F8A7F004702C1 /* RegularAlertController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RegularAlertController.storyboard; sourceTree = "<group>"; };
 		6EB566E81D5F8A7F004702C1 /* RegularAlertController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegularAlertController.swift; sourceTree = "<group>"; };
 		6EB566E91D5F8A7F004702C1 /* RegularAlertTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegularAlertTableViewController.swift; sourceTree = "<group>"; };
 		6EB566EA1D5F8A7F004702C1 /* RegularAlertTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegularAlertTableViewCell.swift; sourceTree = "<group>"; };
-		6EB566EB1D5F8A7F004702C1 /* RegularAlertTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RegularAlertTableViewCell.xib; sourceTree = "<group>"; };
 		6EB566F21D5F8AB8004702C1 /* AlertAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertAnimator.swift; sourceTree = "<group>"; };
 		6EB566F51D5F8ACB004702C1 /* AlertControllerFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertControllerFactory.swift; sourceTree = "<group>"; };
-		6EB566F81D5F8AEE004702C1 /* HeadlineView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeadlineView.xib; sourceTree = "<group>"; };
 		6EB566F91D5F8AEE004702C1 /* HeadlineView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeadlineView.swift; sourceTree = "<group>"; };
-		6EB566FD1D5F8B00004702C1 /* FlyerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FlyerView.xib; sourceTree = "<group>"; };
 		6EB566FE1D5F8B00004702C1 /* FlyerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlyerView.swift; sourceTree = "<group>"; };
 		6EB567011D5F8B0F004702C1 /* AlertController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertController.swift; sourceTree = "<group>"; };
 		6EB567021D5F8B0F004702C1 /* AlertAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertAction.swift; sourceTree = "<group>"; };
@@ -155,7 +155,7 @@
 		6EB566DF1D5F8A3F004702C1 /* CompactAlertController */ = {
 			isa = PBXGroup;
 			children = (
-				6EB566E01D5F8A5C004702C1 /* CompactAlertViewController.xib */,
+				6E74F60B1D66B4C900A1BF63 /* CompactAlertViewController.xib */,
 				6EB566E11D5F8A5C004702C1 /* CompactAlertViewController.swift */,
 				6EB566E21D5F8A5C004702C1 /* CompactAlertButton.swift */,
 			);
@@ -165,11 +165,11 @@
 		6EB566E61D5F8A68004702C1 /* RegularAlertController */ = {
 			isa = PBXGroup;
 			children = (
-				6EB566E71D5F8A7F004702C1 /* RegularAlertController.storyboard */,
+				6E74F6111D66B4E500A1BF63 /* RegularAlertController.storyboard */,
+				6E74F6121D66B4E500A1BF63 /* RegularAlertTableViewCell.xib */,
 				6EB566E81D5F8A7F004702C1 /* RegularAlertController.swift */,
 				6EB566E91D5F8A7F004702C1 /* RegularAlertTableViewController.swift */,
 				6EB566EA1D5F8A7F004702C1 /* RegularAlertTableViewCell.swift */,
-				6EB566EB1D5F8A7F004702C1 /* RegularAlertTableViewCell.xib */,
 			);
 			name = RegularAlertController;
 			sourceTree = "<group>";
@@ -193,7 +193,7 @@
 		6EB566F71D5F8AD9004702C1 /* HeadlineView */ = {
 			isa = PBXGroup;
 			children = (
-				6EB566F81D5F8AEE004702C1 /* HeadlineView.xib */,
+				6E74F60F1D66B4DE00A1BF63 /* HeadlineView.xib */,
 				6EB566F91D5F8AEE004702C1 /* HeadlineView.swift */,
 			);
 			name = HeadlineView;
@@ -202,7 +202,7 @@
 		6EB566FC1D5F8AF5004702C1 /* FlyerView */ = {
 			isa = PBXGroup;
 			children = (
-				6EB566FD1D5F8B00004702C1 /* FlyerView.xib */,
+				6E74F60D1D66B4D700A1BF63 /* FlyerView.xib */,
 				6EB566FE1D5F8B00004702C1 /* FlyerView.swift */,
 			);
 			name = FlyerView;
@@ -299,11 +299,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6EB566EC1D5F8A7F004702C1 /* RegularAlertController.storyboard in Resources */,
-				6EB566F01D5F8A7F004702C1 /* RegularAlertTableViewCell.xib in Resources */,
-				6EB566FA1D5F8AEE004702C1 /* HeadlineView.xib in Resources */,
-				6EB566E31D5F8A5C004702C1 /* CompactAlertViewController.xib in Resources */,
-				6EB566FF1D5F8B00004702C1 /* FlyerView.xib in Resources */,
+				6E74F60C1D66B4C900A1BF63 /* CompactAlertViewController.xib in Resources */,
+				6E74F60E1D66B4D700A1BF63 /* FlyerView.xib in Resources */,
+				6E74F6141D66B4E500A1BF63 /* RegularAlertTableViewCell.xib in Resources */,
+				6E74F6131D66B4E500A1BF63 /* RegularAlertController.storyboard in Resources */,
+				6E74F6101D66B4DE00A1BF63 /* HeadlineView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -525,6 +525,7 @@
 				6EB566D11D5F88E5004702C1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6EB566D21D5F88E5004702C1 /* Build configuration list for PBXNativeTarget "ContentAlertControllerTests" */ = {
 			isa = XCConfigurationList;
@@ -533,6 +534,7 @@
 				6EB566D41D5F88E5004702C1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

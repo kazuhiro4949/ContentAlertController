@@ -11,7 +11,9 @@ import UIKit
 public class FlyerAlertController: AlertController {
 
     public convenience init(title: String, image: UIImage, preferredStyle: Style, config: AlertControllerConfiguration? = nil) {
-        guard let view = UINib(nibName: "FlyerView", bundle: nil).instantiateWithOwner(nil, options: nil).first as? FlyerView else {
+        let path = NSBundle.mainBundle().pathForResource("ContentAlertController-Resource", ofType: "bundle")
+        let bundle = NSBundle(path: path!)
+        guard let view = UINib(nibName: "FlyerView", bundle: bundle).instantiateWithOwner(nil, options: nil).first as? FlyerView else {
             fatalError("should have HeadlineView class in HeadlineView.nib")
         }
         

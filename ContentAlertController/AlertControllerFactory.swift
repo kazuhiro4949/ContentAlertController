@@ -21,22 +21,24 @@ class AlertControllerFactory {
     }
     
     func generate() -> UIViewController {
+        let path = NSBundle.mainBundle().pathForResource("ContentAlertController-Resource", ofType: "bundle")
+        let bundle = NSBundle(path: path!)
         switch style {
         case .Alert where (0...2) ~= actions.count:
-            let vc = UINib(nibName: "CompactAlertViewController", bundle: nil).instantiateWithOwner(nil, options: nil)[0] as! CompactAlertViewController
+            let vc = UINib(nibName: "CompactAlertViewController", bundle: bundle).instantiateWithOwner(nil, options: nil)[0] as! CompactAlertViewController
             vc.customView = customView
             vc.actions = actions
             vc.configuration = configuration
             return vc
         case .Alert:
-            let vc = UIStoryboard(name: "RegularAlertController", bundle: nil).instantiateInitialViewController() as! RegularAlertController
+            let vc = UIStoryboard(name: "RegularAlertController", bundle: bundle).instantiateInitialViewController() as! RegularAlertController
             vc.customView = customView
             vc.style = .Alert
             vc.actions = actions
             vc.configuration = configuration
             return vc
         case .ActionSheet:
-            let vc = UIStoryboard(name: "RegularAlertController", bundle: nil).instantiateInitialViewController() as! RegularAlertController
+            let vc = UIStoryboard(name: "RegularAlertController", bundle: bundle).instantiateInitialViewController() as! RegularAlertController
             vc.customView = customView
             vc.style = .ActionSheet
             vc.actions = actions

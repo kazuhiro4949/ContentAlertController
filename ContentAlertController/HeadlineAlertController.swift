@@ -11,7 +11,9 @@ import UIKit
 public class HeadlineAlertController: AlertController {
 
     public convenience init(title: String, message: String, image: UIImage, preferredStyle: Style, config: AlertControllerConfiguration? = nil) {
-        guard let view = UINib(nibName: "HeadlineView", bundle: nil).instantiateWithOwner(nil, options: nil).first as? HeadlineView else {
+        let path = NSBundle.mainBundle().pathForResource("ContentAlertController-Resource", ofType: "bundle")
+        let bundle = NSBundle(path: path!)
+        guard let view = UINib(nibName: "HeadlineView", bundle: bundle).instantiateWithOwner(nil, options: nil).first as? HeadlineView else {
             fatalError("should have HeadlineView class in HeadlineView.nib")
         }
         

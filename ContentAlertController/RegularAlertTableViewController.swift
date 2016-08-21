@@ -45,12 +45,12 @@ class RegularAlertTableViewController: UITableViewController {
         return cell
     }
     
-    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+    override func tableView(tableView: UITableView, willSelectRowAtIndexPath indexPath: NSIndexPath) -> NSIndexPath? {
         let action = actions[indexPath.row]
-        dismissViewControllerAnimated(true) { 
+        dismissViewControllerAnimated(true) {
             action.handler?(action)
         }
-        
+        return indexPath
     }
     
     override func viewWillLayoutSubviews() {

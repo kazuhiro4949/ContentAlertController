@@ -19,7 +19,8 @@ class AlertPresentationController: UIPresentationController {
     var height = CGFloat(140)
     
     private var upperLimitHeight: CGFloat {
-        return UIScreen.mainScreen().bounds.height - 24
+        let windowHeight = UIApplication.sharedApplication().keyWindow?.bounds.height ?? CGFloat(0)
+        return windowHeight - 24
     }
     
     override func presentationTransitionWillBegin() {

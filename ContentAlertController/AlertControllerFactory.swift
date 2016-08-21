@@ -9,6 +9,20 @@
 import UIKit
 
 class AlertControllerFactory {
+    private static let compactAlertController = {
+       UINib(
+        nibName: "CompactAlertViewController",
+        bundle: NSBundle(forClass: AlertControllerFactory.self))
+        .instantiateWithOwner(nil, options: nil)[0] as! CompactAlertViewController
+    }()
+    
+    private static let regularAlertController = {
+       UIStoryboard(
+        name: "RegularAlertController",
+        bundle: NSBundle(forClass: AlertControllerFactory.self))
+        .instantiateInitialViewController() as! RegularAlertController
+    }()
+    
     let style: AlertController.Style
     let customView: UIView
     var actions = [AlertAction]()
@@ -21,24 +35,22 @@ class AlertControllerFactory {
     }
     
     func generate() -> UIViewController {
-        let bundle = NSBundle(forClass: self.dynamicType)
-
         switch style {
         case .Alert where (0...2) ~= actions.count:
-            let vc = UINib(nibName: "CompactAlertViewController", bundle: bundle).instantiateWithOwner(nil, options: nil)[0] as! CompactAlertViewController
+            let vc = AlertControllerFactory.compactAlertController
             vc.customView = customView
             vc.actions = actions
             vc.configuration = configuration
             return vc
         case .Alert:
-            let vc = UIStoryboard(name: "RegularAlertController", bundle: bundle).instantiateInitialViewController() as! RegularAlertController
+            let vc = AlertControllerFactory.regularAlertController
             vc.customView = customView
             vc.style = .Alert
             vc.actions = actions
             vc.configuration = configuration
             return vc
         case .ActionSheet:
-            let vc = UIStoryboard(name: "RegularAlertController", bundle: bundle).instantiateInitialViewController() as! RegularAlertController
+            let vc = AlertControllerFactory.regularAlertController
             vc.customView = customView
             vc.style = .ActionSheet
             vc.actions = actions

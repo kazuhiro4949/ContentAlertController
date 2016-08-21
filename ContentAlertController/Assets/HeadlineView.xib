@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -29,16 +30,15 @@
                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mU5-d1-sK5">
                             <rect key="frame" x="355" y="16" width="80" height="80"/>
                             <constraints>
-                                <constraint firstAttribute="width" constant="80" id="NF8-Cc-qwc"/>
-                                <constraint firstAttribute="height" constant="80" id="Rvf-x3-Fhd"/>
+                                <constraint firstAttribute="width" secondItem="mU5-d1-sK5" secondAttribute="height" multiplier="1:1" id="REA-r3-Vri"/>
+                                <constraint firstAttribute="height" relation="lessThanOrEqual" constant="80" id="Rvf-x3-Fhd"/>
                             </constraints>
                         </imageView>
                     </subviews>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     <constraints>
                         <constraint firstItem="SDe-Rd-nHu" firstAttribute="top" secondItem="z3C-1u-dAQ" secondAttribute="bottom" constant="8" id="0sA-7h-2ro"/>
-                        <constraint firstItem="mU5-d1-sK5" firstAttribute="centerY" secondItem="cRF-wt-i86" secondAttribute="centerY" id="820-3M-8ia"/>
-                        <constraint firstItem="mU5-d1-sK5" firstAttribute="top" relation="greaterThanOrEqual" secondItem="cRF-wt-i86" secondAttribute="top" constant="16" id="ASH-uh-KRz"/>
+                        <constraint firstItem="mU5-d1-sK5" firstAttribute="top" secondItem="cRF-wt-i86" secondAttribute="top" constant="16" id="ASH-uh-KRz"/>
                         <constraint firstItem="mU5-d1-sK5" firstAttribute="leading" secondItem="z3C-1u-dAQ" secondAttribute="trailing" constant="8" id="BIu-un-e9c"/>
                         <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="SDe-Rd-nHu" secondAttribute="bottom" constant="16" id="DeR-OT-KmF"/>
                         <constraint firstAttribute="trailing" secondItem="mU5-d1-sK5" secondAttribute="trailing" constant="16" id="PnI-UK-VEs"/>
@@ -47,13 +47,7 @@
                         <constraint firstItem="z3C-1u-dAQ" firstAttribute="leading" secondItem="cRF-wt-i86" secondAttribute="leading" constant="16" id="Z0Y-r6-DOc"/>
                         <constraint firstAttribute="bottom" secondItem="mU5-d1-sK5" secondAttribute="bottom" priority="750" constant="16" id="bsi-G8-Y2I"/>
                         <constraint firstItem="SDe-Rd-nHu" firstAttribute="leading" secondItem="cRF-wt-i86" secondAttribute="leading" constant="16" id="bws-cj-gnr"/>
-                        <constraint firstAttribute="bottom" secondItem="mU5-d1-sK5" secondAttribute="bottom" constant="16" id="ttj-PB-kLo"/>
                     </constraints>
-                    <variation key="default">
-                        <mask key="constraints">
-                            <exclude reference="ttj-PB-kLo"/>
-                        </mask>
-                    </variation>
                 </view>
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>

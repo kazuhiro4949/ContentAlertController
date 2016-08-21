@@ -9,11 +9,12 @@
 import UIKit
 
 public class HeadlineAlertController: AlertController {
-
+    private static let headlineView = {
+        UINib(nibName: "HeadlineView", bundle: NSBundle(forClass: HeadlineAlertController.self)).instantiateWithOwner(nil, options: nil).first as! HeadlineView
+    }()
+    
     public convenience init(title: String, message: String, image: UIImage, preferredStyle: Style, config: AlertControllerConfiguration? = nil) {
-        guard let view = UINib(nibName: "HeadlineView", bundle: nil).instantiateWithOwner(nil, options: nil).first as? HeadlineView else {
-            fatalError("should have HeadlineView class in HeadlineView.nib")
-        }
+        let view = HeadlineAlertController.headlineView
         
         view.titleLabel.text = title
         view.detailLabel.text = message

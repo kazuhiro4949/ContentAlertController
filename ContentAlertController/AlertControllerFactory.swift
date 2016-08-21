@@ -21,7 +21,7 @@ class AlertControllerFactory {
     }
     
     func generate() -> UIViewController {
-        let bundle = NSBundle(path: NSBundle.mainBundle().pathForResource("ContentAlertController", ofType: "bundle")!)
+        let bundle = NSBundle(forClass: self.dynamicType)
 
         switch style {
         case .Alert where (0...2) ~= actions.count:

@@ -73,7 +73,7 @@ class RegularAlertController: UIViewController {
         }
         contentScrollView.layoutSubviews()
 
-        cancelContainerView.layer.cornerRadius = 8
+        cancelContainerView.layer.cornerRadius = 16
         cancelContainerView.layer.masksToBounds = true
         
         switch style {
@@ -111,7 +111,7 @@ class RegularAlertController: UIViewController {
                 return action.style != .Cancel
             })
             tableVC?.actions = others
-            contentContainerView.layer.cornerRadius = configuration.cornerRadius ?? 8
+            contentContainerView.layer.cornerRadius = configuration.cornerRadius ?? 16
             contentContainerView.layer.masksToBounds = true
             cancelContainerView.hidden = false
         }

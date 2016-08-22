@@ -32,11 +32,17 @@
                                                         <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                         <subviews>
-                                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6EZ-ya-m7o" customClass="CompactAlertButton" customModule="ContentAlertController" customModuleProvider="target">
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6EZ-ya-m7o" customClass="CompactAlertButton" customModule="ContentAlertController" customModuleProvider="target">
                                                                 <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                             </view>
                                                         </subviews>
+                                                        <constraints>
+                                                            <constraint firstAttribute="trailing" secondItem="6EZ-ya-m7o" secondAttribute="trailing" id="8in-2F-3Nh"/>
+                                                            <constraint firstAttribute="bottom" secondItem="6EZ-ya-m7o" secondAttribute="bottom" id="Hae-D7-IE4"/>
+                                                            <constraint firstItem="6EZ-ya-m7o" firstAttribute="leading" secondItem="QVQ-Fv-CoQ" secondAttribute="leading" id="aqg-6L-5pu"/>
+                                                            <constraint firstItem="6EZ-ya-m7o" firstAttribute="top" secondItem="QVQ-Fv-CoQ" secondAttribute="top" id="sRk-ab-cAO"/>
+                                                        </constraints>
                                                     </view>
                                                     <vibrancyEffect>
                                                         <blurEffect style="light"/>

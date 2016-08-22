@@ -16,6 +16,8 @@ class RegularAlertTableViewController: UITableViewController {
         }
     }
     
+    var cellHeight = CGFloat(44)
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.separatorEffect = UIVibrancyEffect(forBlurEffect: UIBlurEffect(style: .ExtraLight))
@@ -51,6 +53,10 @@ class RegularAlertTableViewController: UITableViewController {
             action.handler?(action)
         }
         return indexPath
+    }
+    
+    override func tableView(tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+        return cellHeight
     }
     
     override func viewWillLayoutSubviews() {

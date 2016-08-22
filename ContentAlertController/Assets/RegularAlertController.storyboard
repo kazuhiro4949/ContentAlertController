@@ -18,22 +18,22 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A13-EF-umP">
-                                <rect key="frame" x="0.0" y="548" width="600" height="52"/>
+                                <rect key="frame" x="0.0" y="535" width="600" height="65"/>
                                 <subviews>
                                     <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zqc-tq-uiV">
-                                        <rect key="frame" x="0.0" y="8" width="600" height="44"/>
+                                        <rect key="frame" x="0.0" y="8" width="600" height="57"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="1qV-2N-CWQ">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="57"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <subviews>
                                                 <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bjs-M1-2iY">
-                                                    <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="600" height="57"/>
                                                     <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="QVQ-Fv-CoQ">
-                                                        <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="600" height="57"/>
                                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                         <subviews>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6EZ-ya-m7o" customClass="CompactAlertButton" customModule="ContentAlertController" customModuleProvider="target">
-                                                                <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="600" height="57"/>
                                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                             </view>
                                                         </subviews>
@@ -49,7 +49,7 @@
                                                     </vibrancyEffect>
                                                 </visualEffectView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cancel" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="6Pj-Nt-ooA">
-                                                    <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="600" height="57"/>
                                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                                     <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -73,20 +73,20 @@
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="Zqc-tq-uiV" secondAttribute="bottom" id="BpA-og-4rt"/>
                                     <constraint firstAttribute="trailing" secondItem="Zqc-tq-uiV" secondAttribute="trailing" id="Ggw-Db-bA5"/>
-                                    <constraint firstAttribute="height" constant="52" id="Kq5-rf-oDW"/>
+                                    <constraint firstAttribute="height" constant="65" id="Kq5-rf-oDW"/>
                                     <constraint firstItem="Zqc-tq-uiV" firstAttribute="leading" secondItem="A13-EF-umP" secondAttribute="leading" id="TLY-3T-aMj"/>
                                     <constraint firstItem="Zqc-tq-uiV" firstAttribute="top" secondItem="A13-EF-umP" secondAttribute="top" constant="8" id="ZpG-Pu-72d"/>
                                     <constraint firstAttribute="height" priority="999" id="gBP-k8-WFa"/>
                                 </constraints>
                             </view>
                             <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HfF-Gx-0LI">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="548"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="535"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="b1W-T9-oPP">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="548"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="535"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TPr-W3-xlV">
-                                            <rect key="frame" x="0.0" y="460" width="600" height="88"/>
+                                            <rect key="frame" x="0.0" y="447" width="600" height="88"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="88" id="8qQ-3g-eiL"/>
                                             </constraints>
@@ -95,7 +95,7 @@
                                             </connections>
                                         </containerView>
                                         <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xJF-dB-kys">
-                                            <rect key="frame" x="0.0" y="459" width="600" height="0.5"/>
+                                            <rect key="frame" x="0.0" y="446" width="600" height="0.5"/>
                                             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="nTP-yf-Nxf">
                                                 <rect key="frame" x="0.0" y="0.0" width="600" height="0.5"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -120,7 +120,7 @@
                                             </vibrancyEffect>
                                         </visualEffectView>
                                         <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fQZ-82-Epe">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="459.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="446.5"/>
                                         </scrollView>
                                     </subviews>
                                     <constraints>

@@ -85,6 +85,7 @@ class RegularAlertController: UIViewController {
                 return action.style != .Cancel
             })
             tableVC?.actions = others + cancel
+            tableVC?.cellHeight = CGFloat(44)
             contentContainerViewBottomConstraint.active = false
             contentContainerView.layer.cornerRadius = configuration.cornerRadius ?? 12
             contentContainerView.layer.masksToBounds = true
@@ -111,6 +112,7 @@ class RegularAlertController: UIViewController {
                 return action.style != .Cancel
             })
             tableVC?.actions = others
+            tableVC?.cellHeight = CGFloat(57)
             contentContainerView.layer.cornerRadius = configuration.cornerRadius ?? 12
             contentContainerView.layer.masksToBounds = true
             cancelContainerView.hidden = false

@@ -16,7 +16,7 @@ public struct AlertActionConfiguration {
     public static var defaultConfig: AlertActionConfiguration {
         return AlertActionConfiguration(
             textColor: .systemBlueColor(),
-            font: .systemFontOfSize(14),
+            font: .systemFontOfSize(17),
             backgroundColor: .clearColor()
         )
     }
@@ -24,7 +24,7 @@ public struct AlertActionConfiguration {
     public static var cancelConfig: AlertActionConfiguration {
         return AlertActionConfiguration(
             textColor: .systemBlueColor(),
-            font: .boldSystemFontOfSize(14),
+            font: .boldSystemFontOfSize(17),
             backgroundColor: .clearColor()
         )
     }
@@ -32,7 +32,7 @@ public struct AlertActionConfiguration {
     public static var destructiveConfig: AlertActionConfiguration {
         return AlertActionConfiguration(
             textColor: .systemRedColor(),
-            font: .boldSystemFontOfSize(14),
+            font: .boldSystemFontOfSize(17),
             backgroundColor: .clearColor()
         )
     }

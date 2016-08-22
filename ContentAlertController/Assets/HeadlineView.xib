@@ -13,22 +13,22 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cRF-wt-i86">
-                    <rect key="frame" x="0.0" y="0.0" width="451" height="112"/>
+                    <rect key="frame" x="0.0" y="0.0" width="451" height="128"/>
                     <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SDe-Rd-nHu">
-                            <rect key="frame" x="16" y="43" width="331" height="21"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SDe-Rd-nHu">
+                            <rect key="frame" x="24" y="51.5" width="315" height="16"/>
                             <fontDescription key="fontDescription" type="system" pointSize="13"/>
                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z3C-1u-dAQ">
-                            <rect key="frame" x="16" y="16" width="331" height="19.5"/>
+                            <rect key="frame" x="24" y="24" width="315" height="19.5"/>
                             <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mU5-d1-sK5">
-                            <rect key="frame" x="355" y="16" width="80" height="80"/>
+                            <rect key="frame" x="347" y="24" width="80" height="80"/>
                             <constraints>
                                 <constraint firstAttribute="width" secondItem="mU5-d1-sK5" secondAttribute="height" multiplier="1:1" id="REA-r3-Vri"/>
                                 <constraint firstAttribute="height" relation="lessThanOrEqual" constant="80" id="Rvf-x3-Fhd"/>
@@ -38,15 +38,15 @@
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     <constraints>
                         <constraint firstItem="SDe-Rd-nHu" firstAttribute="top" secondItem="z3C-1u-dAQ" secondAttribute="bottom" constant="8" id="0sA-7h-2ro"/>
-                        <constraint firstItem="mU5-d1-sK5" firstAttribute="top" secondItem="cRF-wt-i86" secondAttribute="top" constant="16" id="ASH-uh-KRz"/>
+                        <constraint firstItem="mU5-d1-sK5" firstAttribute="top" secondItem="cRF-wt-i86" secondAttribute="top" constant="24" id="ASH-uh-KRz"/>
                         <constraint firstItem="mU5-d1-sK5" firstAttribute="leading" secondItem="z3C-1u-dAQ" secondAttribute="trailing" constant="8" id="BIu-un-e9c"/>
                         <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="SDe-Rd-nHu" secondAttribute="bottom" constant="16" id="DeR-OT-KmF"/>
-                        <constraint firstAttribute="trailing" secondItem="mU5-d1-sK5" secondAttribute="trailing" constant="16" id="PnI-UK-VEs"/>
+                        <constraint firstAttribute="trailing" secondItem="mU5-d1-sK5" secondAttribute="trailing" constant="24" id="PnI-UK-VEs"/>
                         <constraint firstItem="mU5-d1-sK5" firstAttribute="leading" secondItem="SDe-Rd-nHu" secondAttribute="trailing" constant="8" id="Q1r-SW-WWm"/>
-                        <constraint firstItem="z3C-1u-dAQ" firstAttribute="top" secondItem="cRF-wt-i86" secondAttribute="top" constant="16" id="X97-qv-hPv"/>
-                        <constraint firstItem="z3C-1u-dAQ" firstAttribute="leading" secondItem="cRF-wt-i86" secondAttribute="leading" constant="16" id="Z0Y-r6-DOc"/>
-                        <constraint firstAttribute="bottom" secondItem="mU5-d1-sK5" secondAttribute="bottom" priority="750" constant="16" id="bsi-G8-Y2I"/>
-                        <constraint firstItem="SDe-Rd-nHu" firstAttribute="leading" secondItem="cRF-wt-i86" secondAttribute="leading" constant="16" id="bws-cj-gnr"/>
+                        <constraint firstItem="z3C-1u-dAQ" firstAttribute="top" secondItem="cRF-wt-i86" secondAttribute="top" constant="24" id="X97-qv-hPv"/>
+                        <constraint firstItem="z3C-1u-dAQ" firstAttribute="leading" secondItem="cRF-wt-i86" secondAttribute="leading" constant="24" id="Z0Y-r6-DOc"/>
+                        <constraint firstAttribute="bottom" secondItem="mU5-d1-sK5" secondAttribute="bottom" priority="750" constant="24" id="bsi-G8-Y2I"/>
+                        <constraint firstItem="SDe-Rd-nHu" firstAttribute="leading" secondItem="cRF-wt-i86" secondAttribute="leading" constant="24" id="bws-cj-gnr"/>
                     </constraints>
                 </view>
             </subviews>

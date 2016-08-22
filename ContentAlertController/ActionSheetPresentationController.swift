@@ -17,11 +17,14 @@ class ActionSheetPresentationController: UIPresentationController {
         return view
     }()
     
-    func didTapOverlayView(sender: UITapGestureRecognizer) {
-        presentedViewController.dismissViewControllerAnimated(true, completion: nil)
+    private var upperLimitHeight: CGFloat {
+        let windowHeight = UIApplication.sharedApplication().keyWindow?.bounds.height ?? CGFloat(0)
+        return windowHeight - 24
     }
     
-    let margin = CGFloat(8)
+    func didTapOverlayView(sender: UITapGestureRecognizer) {
+        presentedViewController.dismissViewControllerAnimated(true, completion: nil)
+    }    
 
     override func presentationTransitionWillBegin() {
         super.presentationTransitionWillBegin()
@@ -54,7 +57,9 @@ class ActionSheetPresentationController: UIPresentationController {
     }
     
     override func sizeForChildContentContainer(container: UIContentContainer, withParentContainerSize parentSize: CGSize) -> CGSize {
-        return container.preferredContentSize
+        var size = container.preferredContentSize
+        size.height = min(upperLimitHeight, size.height)
+        return size
     }
     
     override func frameOfPresentedViewInContainerView() -> CGRect {

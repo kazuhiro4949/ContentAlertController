@@ -34,14 +34,6 @@
                                                         <subviews>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6EZ-ya-m7o" customClass="CompactAlertButton" customModule="ContentAlertController" customModuleProvider="target">
                                                                 <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
-                                                                <subviews>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Cancel" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="6Pj-Nt-ooA">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
-                                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
-                                                                        <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                                        <nil key="highlightedColor"/>
-                                                                    </label>
-                                                                </subviews>
                                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                             </view>
                                                         </subviews>
@@ -56,11 +48,21 @@
                                                         <blurEffect style="light"/>
                                                     </vibrancyEffect>
                                                 </visualEffectView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cancel" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="6Pj-Nt-ooA">
+                                                    <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstItem="6Pj-Nt-ooA" firstAttribute="leading" secondItem="1qV-2N-CWQ" secondAttribute="leading" id="9T1-1o-W1O"/>
                                                 <constraint firstItem="bjs-M1-2iY" firstAttribute="leading" secondItem="1qV-2N-CWQ" secondAttribute="leading" id="Ja1-zE-kQ5"/>
                                                 <constraint firstAttribute="bottom" secondItem="bjs-M1-2iY" secondAttribute="bottom" id="NA2-mK-Adj"/>
                                                 <constraint firstAttribute="trailing" secondItem="bjs-M1-2iY" secondAttribute="trailing" id="NRg-lR-DP4"/>
+                                                <constraint firstItem="6Pj-Nt-ooA" firstAttribute="top" secondItem="1qV-2N-CWQ" secondAttribute="top" id="VX5-ef-7Qa"/>
+                                                <constraint firstAttribute="trailing" secondItem="6Pj-Nt-ooA" secondAttribute="trailing" id="dL5-QB-1yH"/>
+                                                <constraint firstAttribute="bottom" secondItem="6Pj-Nt-ooA" secondAttribute="bottom" id="gnl-Wf-w7O"/>
                                                 <constraint firstItem="bjs-M1-2iY" firstAttribute="top" secondItem="1qV-2N-CWQ" secondAttribute="top" id="vFc-EH-lnF"/>
                                             </constraints>
                                         </view>

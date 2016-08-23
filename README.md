@@ -1,6 +1,10 @@
 # ContentAlertController
 
+ContentAlertController is a kind of UIAlertViewController like UI.
+This library copies the style and API of UIAlertViewController.
+But you can add any custom view to the object.
 
+![uploaded](https://cloud.githubusercontent.com/assets/18320004/17892613/39394740-697d-11e6-85ee-728d69cc1ca3.gif)
 
 ## What's this?
 

@@ -2,12 +2,17 @@
 
 ContentAlertController is a kind of UIAlertViewController like UI. You can add any custom view to the object.
 
+## What's this?
+
+There are some templates to make rich alert.
+- Headline 
+
 ![uploaded](https://cloud.githubusercontent.com/assets/18320004/17892613/39394740-697d-11e6-85ee-728d69cc1ca3.gif)
 
+- Flyer
 
 ![viewport](https://cloud.githubusercontent.com/assets/18320004/17893266/0ddbb684-6980-11e6-96b6-3444ec31939c.gif)
 
-## What's this?
 
 ## Feature
 - [x] Enable to put any custom views on AlertView and ActionSheet as you like it

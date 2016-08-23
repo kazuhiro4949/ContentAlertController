@@ -9,13 +9,11 @@
 import UIKit
 
 public class FlyerAlertController: AlertController {
-    private static let flyerView = {
-        UINib(nibName: "FlyerView", bundle: NSBundle(forClass: FlyerAlertController.self)).instantiateWithOwner(nil, options: nil).first as! FlyerView
-    }()
-    
-    
     public convenience init(title: String, image: UIImage, preferredStyle: Style, config: AlertControllerConfiguration? = nil) {
-        let view = FlyerAlertController.flyerView
+        let view = UINib(
+            nibName: "FlyerView",
+            bundle: NSBundle(forClass: FlyerAlertController.self)
+            ).instantiateWithOwner(nil, options: nil).first as! FlyerView
         view.imageView.image = image
         view.frame.size = image.size
         self.init(customView: view, preferredStyle: preferredStyle, config: config)

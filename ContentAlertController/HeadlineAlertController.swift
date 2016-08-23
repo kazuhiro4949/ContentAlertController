@@ -20,7 +20,7 @@ public class HeadlineAlertController: AlertController {
         view.detailLabel.text = message
         view.imageView.image = image
         
-        view.frame.size.width = preferredStyle.preferredWidth
+        view.contentView.frame.size.width = preferredStyle.preferredWidth
         view.contentView.setNeedsLayout()
         view.contentView.layoutIfNeeded()
         view.frame.size = view.contentView.bounds.size

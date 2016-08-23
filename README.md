@@ -5,11 +5,12 @@ ContentAlertController is a kind of UIAlertViewController like UI. You can add a
 ## What's this?
 
 There are some templates to make rich alert.
-- Headline 
+
+### Headline Template
 
 ![uploaded](https://cloud.githubusercontent.com/assets/18320004/17892613/39394740-697d-11e6-85ee-728d69cc1ca3.gif)
 
-- Flyer
+### Flyer Template
 
 ![viewport](https://cloud.githubusercontent.com/assets/18320004/17893266/0ddbb684-6980-11e6-96b6-3444ec31939c.gif)
 

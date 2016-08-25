@@ -93,12 +93,12 @@ open .xcworkspace
 You can put a view you create on Alert or ActionSheet.
 
 ```swift
-        let view = UIView()
-        view.frame.origin.size = CGSize(width: 100, height: 50)
+let view = UIView()
+view.frame.origin.size = CGSize(width: 100, height: 50)
         
-        let vc = AlertController(customView: view, preferredStyle: .Alert)
-        vc.addAction(AlertAction(title: "", style: .Cancel, handler: { _ in }))
-        presentViewController(vc, animated: true, completion: nil)
+let vc = AlertController(customView: view, preferredStyle: .Alert)
+vc.addAction(AlertAction(title: "", style: .Cancel, handler: { _ in }))
+presentViewController(vc, animated: true, completion: nil)
 ```
 
 This code shows the following AlertView.
@@ -110,9 +110,9 @@ In addition to that, There are some templates to make rich alert. You don't need
 ### Headline Template
 
 ```swift
-        let vc = HeadlineAlertController(title: "TITLE", message: "MESSAGE", image: UIImage(named: "cat"), preferredStyle: .Alert)
-        vc.addAction(AlertAction(title: "", style: .Cancel, handler: { _ in }))
-        presentViewController(vc, animated: true, completion: nil)
+let vc = HeadlineAlertController(title: "TITLE", message: "MESSAGE", image: UIImage(named: "cat"), preferredStyle: .Alert)
+vc.addAction(AlertAction(title: "", style: .Cancel, handler: { _ in }))
+presentViewController(vc, animated: true, completion: nil)
 ```
 
 ![uploaded](https://cloud.githubusercontent.com/assets/18320004/17892613/39394740-697d-11e6-85ee-728d69cc1ca3.gif)
@@ -120,9 +120,9 @@ In addition to that, There are some templates to make rich alert. You don't need
 ### Flyer Template
 
 ```swift
-        let vc = FlyerAlertController(image: UIImage(named: "cat"), preferredStyle: .Alert)
-        vc.addAction(AlertAction(title: "", style: .Cancel, handler: { _ in }))
-        presentViewController(vc, animated: true, completion: nil)
+let vc = FlyerAlertController(image: UIImage(named: "cat"), preferredStyle: .Alert)
+vc.addAction(AlertAction(title: "", style: .Cancel, handler: { _ in }))
+presentViewController(vc, animated: true, completion: nil)
 ```
 
 ![viewport](https://cloud.githubusercontent.com/assets/18320004/17893266/0ddbb684-6980-11e6-96b6-3444ec31939c.gif)

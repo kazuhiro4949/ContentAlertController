@@ -9,7 +9,7 @@
 import UIKit
 
 public class FlyerAlertController: AlertController {
-    public convenience init(title: String, image: UIImage, preferredStyle: Style, config: AlertControllerConfiguration? = nil) {
+    public convenience init(image: UIImage, preferredStyle: Style, config: AlertControllerConfiguration? = nil) {
         let view = UINib(
             nibName: "FlyerView",
             bundle: NSBundle(forClass: FlyerAlertController.self)

@@ -9,7 +9,7 @@
 import UIKit
 
 public class HeadlineAlertController: AlertController {
-    
+
     public convenience init(title: String, message: String, image: UIImage, preferredStyle: Style, config: AlertControllerConfiguration? = nil) {
         let view = UINib(
             nibName: "HeadlineView",
@@ -27,5 +27,34 @@ public class HeadlineAlertController: AlertController {
         view.contentView.layoutIfNeeded()
         view.frame.size = view.contentView.bounds.size
         self.init(customView: view, preferredStyle: preferredStyle, config: config)
+    }
+    
+    public convenience init(title: String, message: String, imageUrl: NSURL, preferredStyle: Style, config: AlertControllerConfiguration? = nil) {
+        let view = UINib(
+            nibName: "HeadlineView",
+            bundle: NSBundle(forClass: HeadlineAlertController.self)
+            )
+            .instantiateWithOwner(nil, options: nil).first as! HeadlineView
+        
+        view.titleLabel.text = title
+        view.detailLabel.text = message
+        
+        view.translatesAutoresizingMaskIntoConstraints = true
+        view.frame.size.width = preferredStyle.preferredWidth
+        view.contentView.setNeedsLayout()
+        view.contentView.layoutIfNeeded()
+        view.frame.size = view.contentView.bounds.size
+        self.init(customView: view, preferredStyle: preferredStyle, config: config)
+        
+        
+        let session = NSURLSession(configuration: .defaultSessionConfiguration(), delegate: nil, delegateQueue: .mainQueue())
+        session.dataTaskWithURL(imageUrl) { (data, resp, error) in
+            guard let data = data else {
+                return
+            }
+            
+            view.imageView.image = UIImage(data: data)
+            }
+            .resume()
     }
 }

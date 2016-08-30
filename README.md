@@ -52,7 +52,7 @@ $(SRCROOT)/Carthage/Build/iOS/ContentAlertController.framework
 ```
 + Write Import statement on your source file
 ```
-Import ContentAlertController
+import ContentAlertController
 ```
 
 ### CocoaPods

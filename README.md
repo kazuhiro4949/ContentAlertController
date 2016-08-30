@@ -120,7 +120,7 @@ presentViewController(vc, animated: true, completion: nil)
 ### Flyer Template
 
 ```swift
-let vc = FlyerAlertController(image: UIImage(named: "cat"), preferredStyle: .Alert)
+let vc = FlyerAlertController(image: UIImage(named: "IceCream"), preferredStyle: .Alert)
 vc.addAction(AlertAction(title: "", style: .Cancel, handler: { _ in }))
 presentViewController(vc, animated: true, completion: nil)
 ```

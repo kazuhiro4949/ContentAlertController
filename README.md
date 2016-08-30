@@ -33,7 +33,7 @@ That's why I made ContentAlertController. It is more flexible and developers is 
 ```
 + add the following line to Cartfile
 ```
-github "kazuhiro49/ContentAlertController"
+github "kazuhiro4949/ContentAlertController"
 ```
 + Create framework
 ```

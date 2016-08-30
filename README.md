@@ -1,13 +1,13 @@
 # ContentAlertController
 
-ContentAlertController is a kind of UIAlertController like UI. You can add any custom view to the viewes.
+ContentAlertController likes UIAlertController. You can show any custom view on AlertView and ActionSheet.
 
 ## What's this?
-UIAlertController is one of the most standard and popular ViewController. 
-Apple recommend that apps provide message and available actions with this class.
-It is resonable but constrains app developers.
+UIAlertController is one of the most standard and popular ViewControllers. 
+Apple recommends that your app provides messages and available actions with this class.
+It is reasonable, but it has a lot of constrains in terms of design.
 
-That's why I made ContentAlertController. It is more flexible and developers is free to custumize the UI.
+That's why I made ContentAlertController. It is more flexible and developers is free to custumize the design.
 
 ## Feature
 - [x] Enable to put any custom views on AlertView and ActionSheet as you like it

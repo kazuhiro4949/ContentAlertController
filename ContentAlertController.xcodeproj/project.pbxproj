@@ -117,11 +117,9 @@
 		6EB566BD1D5F88E5004702C1 /* ContentAlertController */ = {
 			isa = PBXGroup;
 			children = (
+				6E0067FB1D77051A00D57328 /* ContentAlertController.swift */,
 				6EB567011D5F8B0F004702C1 /* AlertController.swift */,
 				6EB567021D5F8B0F004702C1 /* AlertAction.swift */,
-				6E0067FB1D77051A00D57328 /* ContentAlertController.swift */,
-				6EB567031D5F8B0F004702C1 /* HeadlineAlertController.swift */,
-				6EB567041D5F8B0F004702C1 /* FlyerAlertController.swift */,
 				6EB567051D5F8B0F004702C1 /* AlertControllerConfiguration.swift */,
 				6EB567061D5F8B0F004702C1 /* AlertActionConfiguration.swift */,
 				6EB566FC1D5F8AF5004702C1 /* FlyerView */,
@@ -196,6 +194,7 @@
 		6EB566F71D5F8AD9004702C1 /* HeadlineView */ = {
 			isa = PBXGroup;
 			children = (
+				6EB567031D5F8B0F004702C1 /* HeadlineAlertController.swift */,
 				6E74F60F1D66B4DE00A1BF63 /* HeadlineView.xib */,
 				6EB566F91D5F8AEE004702C1 /* HeadlineView.swift */,
 			);
@@ -205,6 +204,7 @@
 		6EB566FC1D5F8AF5004702C1 /* FlyerView */ = {
 			isa = PBXGroup;
 			children = (
+				6EB567041D5F8B0F004702C1 /* FlyerAlertController.swift */,
 				6E74F60D1D66B4D700A1BF63 /* FlyerView.xib */,
 				6EB566FE1D5F8B00004702C1 /* FlyerView.swift */,
 			);

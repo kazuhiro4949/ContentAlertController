@@ -10,5 +10,4 @@ import UIKit
 
 class FlyerView: UIView {
     @IBOutlet weak var imageView: UIImageView!
-
 }

@@ -1,12 +1,18 @@
 # ContentAlertController
 
-
+ContentAlertController likes UIAlertController. You can show any custom view on AlertView and ActionSheet.
 
 ## What's this?
+UIAlertController is one of the most standard and popular ViewControllers. 
+Apple recommends that your app provides messages and available actions with this class.
+It is reasonable, but it has a lot of constrains in terms of design.
+
+That's why I made ContentAlertController. This library is more flexible than UIAlertController. Developers are free to custumize the design.
 
 ## Feature
 - [x] Enable to put any custom views on AlertView and ActionSheet as you like it
 - [x] add custom style to AlertView and ActionSheet 
+- [x] copy the style and API of UIAlertViewController
 
 ## Requirements
 - iOS 9.0+
@@ -27,7 +33,7 @@
 ```
 + add the following line to Cartfile
 ```
-github "kazuhiro49/ContentAlertController"
+github "kazuhiro4949/ContentAlertController"
 ```
 + Create framework
 ```
@@ -46,7 +52,7 @@ $(SRCROOT)/Carthage/Build/iOS/ContentAlertController.framework
 ```
 + Write Import statement on your source file
 ```
-Import ContentAlertController
+import ContentAlertController
 ```
 
 ### CocoaPods
@@ -83,6 +89,43 @@ target 'MyAppUITests'
 open .xcworkspace
 
 ## Example
+
+You can put a view you create on Alert or ActionSheet.
+
+```swift
+let view = UIView()
+view.frame.origin.size = CGSize(width: 100, height: 50)
+        
+let vc = AlertController(customView: view, preferredStyle: .Alert)
+vc.addAction(AlertAction(title: "", style: .Cancel, handler: { _ in }))
+presentViewController(vc, animated: true, completion: nil)
+```
+
+This code shows the following AlertView.
+
+
+The interface is similer to **UIAlertController**. It is easy to transform UIAlertController to ContentAlertController.
+In addition to that, There are some templates to make rich alert. You don't need to prepare custom view with the templates.
+
+### Headline Template
+
+```swift
+let vc = HeadlineAlertController(title: "TITLE", message: "MESSAGE", image: UIImage(named: "cat"), preferredStyle: .Alert)
+vc.addAction(AlertAction(title: "", style: .Cancel, handler: { _ in }))
+presentViewController(vc, animated: true, completion: nil)
+```
+
+![uploaded](https://cloud.githubusercontent.com/assets/18320004/17892613/39394740-697d-11e6-85ee-728d69cc1ca3.gif)
+
+### Flyer Template
+
+```swift
+let vc = FlyerAlertController(image: UIImage(named: "IceCream"), preferredStyle: .Alert)
+vc.addAction(AlertAction(title: "", style: .Cancel, handler: { _ in }))
+presentViewController(vc, animated: true, completion: nil)
+```
+
+![viewport](https://cloud.githubusercontent.com/assets/18320004/17893266/0ddbb684-6980-11e6-96b6-3444ec31939c.gif)
 
 ## Usage
 

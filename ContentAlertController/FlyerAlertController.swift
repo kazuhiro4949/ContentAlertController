@@ -10,21 +10,21 @@ import UIKit
 
 public class FlyerAlertController: AlertController {
     public convenience init(image: UIImage, preferredStyle: Style, config: AlertControllerConfiguration? = nil) {
-        let view = UINib(
-            nibName: "FlyerView",
-            bundle: NSBundle(forClass: FlyerAlertController.self)
-            ).instantiateWithOwner(nil, options: nil).first as! FlyerView
+        let view = FlyerAlertController.customView
         view.imageView.image = image
         view.frame.size = image.size
-        self.init(customView: view, preferredStyle: preferredStyle, config: config)
+        
+        self.init(nibName: nil, bundle: nil)
+        
+        factory = AlertControllerFactory(
+            style: preferredStyle,
+            customView: view,
+            config: config ?? .defaultConfiguration
+        )
     }
     
     public convenience init(imageURL: NSURL, size: CGSize, preferredStyle: Style, config: AlertControllerConfiguration? = nil) {
-        let view = UINib(
-            nibName: "FlyerView",
-            bundle: NSBundle(forClass: FlyerAlertController.self)
-            ).instantiateWithOwner(nil, options: nil).first as! FlyerView
-        
+        let view = FlyerAlertController.customView
         view.frame.size = size
         
         let session = NSURLSession(configuration: .defaultSessionConfiguration(), delegate: nil, delegateQueue: .mainQueue())
@@ -37,7 +37,20 @@ public class FlyerAlertController: AlertController {
         }
         .resume()
         
-        self.init(customView: view, preferredStyle: preferredStyle, config: config)
+        self.init(nibName: nil, bundle: nil)
+        
+        factory = AlertControllerFactory(
+            style: preferredStyle,
+            customView: view,
+            config: config ?? .defaultConfiguration
+        )
+    }
+    
+    private static var customView: FlyerView {
+        return UINib(
+            nibName: "FlyerView",
+            bundle: NSBundle(forClass: FlyerAlertController.self)
+        ).instantiateWithOwner(nil, options: nil).first as! FlyerView
     }
 
 }

@@ -11,12 +11,7 @@ import UIKit
 public class HeadlineAlertController: AlertController {
 
     public convenience init(title: String, message: String, image: UIImage, preferredStyle: Style, config: AlertControllerConfiguration? = nil) {
-        let view = UINib(
-            nibName: "HeadlineView",
-            bundle: NSBundle(forClass: HeadlineAlertController.self)
-            )
-            .instantiateWithOwner(nil, options: nil).first as! HeadlineView
-        
+        let view = HeadlineAlertController.customView
         view.titleLabel.text = title
         view.detailLabel.text = message
         view.imageView.image = image
@@ -26,16 +21,18 @@ public class HeadlineAlertController: AlertController {
         view.contentView.setNeedsLayout()
         view.contentView.layoutIfNeeded()
         view.frame.size = view.contentView.bounds.size
-        self.init(customView: view, preferredStyle: preferredStyle, config: config)
+        
+        self.init(nibName: nil, bundle: nil)
+        
+        factory = AlertControllerFactory(
+            style: preferredStyle,
+            customView: view,
+            config: config ?? .defaultConfiguration
+        )
     }
     
     public convenience init(title: String, message: String, imageUrl: NSURL, preferredStyle: Style, config: AlertControllerConfiguration? = nil) {
-        let view = UINib(
-            nibName: "HeadlineView",
-            bundle: NSBundle(forClass: HeadlineAlertController.self)
-            )
-            .instantiateWithOwner(nil, options: nil).first as! HeadlineView
-        
+        let view = HeadlineAlertController.customView
         view.titleLabel.text = title
         view.detailLabel.text = message
         
@@ -55,6 +52,20 @@ public class HeadlineAlertController: AlertController {
         }
         .resume()
         
-        self.init(customView: view, preferredStyle: preferredStyle, config: config)
+        self.init(nibName: nil, bundle: nil)
+        
+        factory = AlertControllerFactory(
+            style: preferredStyle,
+            customView: view,
+            config: config ?? .defaultConfiguration
+        )
+    }
+    
+    private static var customView: HeadlineView {
+        return UINib(
+            nibName: "HeadlineView",
+            bundle: NSBundle(forClass: HeadlineAlertController.self)
+        )
+        .instantiateWithOwner(nil, options: nil).first as! HeadlineView
     }
 }

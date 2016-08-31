@@ -21,60 +21,48 @@ public extension UIColor {
 
 public class AlertController: UIViewController, UIViewControllerTransitioningDelegate {
     
-    private let factory: AlertControllerFactory
-    private var displayedViewController: UIViewController?
+    var factory: AlertControllerFactory?
     
-    public init(customView: UIView, preferredStyle: Style, config: AlertControllerConfiguration? = nil) {
-        factory = AlertControllerFactory(
-            style: preferredStyle,
-            customView: customView,
-            config: config ?? .defaultConfiguration
-        )
-        super.init(nibName: nil, bundle: nil)
+    private var displayedViewController: UIViewController?
+
+    required public init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+    }
+    
+    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
+        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
         
         self.modalPresentationStyle = .Custom
         self.transitioningDelegate = self
     }
     
     public func addAction(action: AlertAction) {
-        factory.actions.append(action)
-    }
-    
-    required public init?(coder aDecoder: NSCoder) {
-        factory = AlertControllerFactory(style: .Alert, customView: UIView(), config: .defaultConfiguration)
-        
-        super.init(coder: aDecoder)
-    }
-    
-    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
-        factory = AlertControllerFactory(style: .Alert, customView: UIView(), config: .defaultConfiguration)
-        
-        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
+        factory?.actions.append(action)
     }
     
     override public func viewDidLoad() {
         super.viewDidLoad()
-        displayedViewController = factory.generate()
         
-        if let vc = displayedViewController {
+        if let vc = factory?.generate() {
             self.addChildViewController(vc)
             vc.view.translatesAutoresizingMaskIntoConstraints = true
             vc.view.autoresizingMask = [.FlexibleHeight, .FlexibleWidth]
             self.view.addSubview(vc.view)
             vc.didMoveToParentViewController(self)
+            displayedViewController = vc
         }        
     }
 
     public func presentationControllerForPresentedViewController(presented: UIViewController, presentingViewController presenting: UIViewController, sourceViewController source: UIViewController) -> UIPresentationController? {
-        return factory.style.presentationController(presented: presented, presenting: presenting)
+        return factory?.style.presentationController(presented: presented, presenting: presenting)
     }
     
     public func animationControllerForPresentedController(presented: UIViewController, presentingController presenting: UIViewController, sourceController source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
-        return factory.style.presentAnimator()
+        return factory?.style.presentAnimator()
     }
     
     public func animationControllerForDismissedController(dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
-        return factory.style.dismissAnimator()
+        return factory?.style.dismissAnimator()
     }
     
     override public var preferredContentSize: CGSize {

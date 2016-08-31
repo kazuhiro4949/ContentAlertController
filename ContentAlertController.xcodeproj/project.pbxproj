@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6E0067FC1D77051A00D57328 /* ContentAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E0067FB1D77051A00D57328 /* ContentAlertController.swift */; };
 		6E74F60C1D66B4C900A1BF63 /* CompactAlertViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E74F60B1D66B4C900A1BF63 /* CompactAlertViewController.xib */; };
 		6E74F60E1D66B4D700A1BF63 /* FlyerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E74F60D1D66B4D700A1BF63 /* FlyerView.xib */; };
 		6E74F6101D66B4DE00A1BF63 /* HeadlineView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E74F60F1D66B4DE00A1BF63 /* HeadlineView.xib */; };
@@ -45,6 +46,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6E0067FB1D77051A00D57328 /* ContentAlertController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentAlertController.swift; sourceTree = "<group>"; };
 		6E74F60B1D66B4C900A1BF63 /* CompactAlertViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CompactAlertViewController.xib; path = Assets/CompactAlertViewController.xib; sourceTree = "<group>"; };
 		6E74F60D1D66B4D700A1BF63 /* FlyerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FlyerView.xib; path = Assets/FlyerView.xib; sourceTree = "<group>"; };
 		6E74F60F1D66B4DE00A1BF63 /* HeadlineView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = HeadlineView.xib; path = Assets/HeadlineView.xib; sourceTree = "<group>"; };
@@ -117,6 +119,7 @@
 			children = (
 				6EB567011D5F8B0F004702C1 /* AlertController.swift */,
 				6EB567021D5F8B0F004702C1 /* AlertAction.swift */,
+				6E0067FB1D77051A00D57328 /* ContentAlertController.swift */,
 				6EB567031D5F8B0F004702C1 /* HeadlineAlertController.swift */,
 				6EB567041D5F8B0F004702C1 /* FlyerAlertController.swift */,
 				6EB567051D5F8B0F004702C1 /* AlertControllerConfiguration.swift */,
@@ -327,6 +330,7 @@
 				6EB566F31D5F8AB8004702C1 /* AlertAnimator.swift in Sources */,
 				6EB5670C1D5F8B0F004702C1 /* AlertActionConfiguration.swift in Sources */,
 				6EB5670A1D5F8B0F004702C1 /* FlyerAlertController.swift in Sources */,
+				6E0067FC1D77051A00D57328 /* ContentAlertController.swift in Sources */,
 				6EB5670B1D5F8B0F004702C1 /* AlertControllerConfiguration.swift in Sources */,
 				6EB566DD1D5F8A2B004702C1 /* AlertPresentationController.swift in Sources */,
 				6EB567071D5F8B0F004702C1 /* AlertController.swift in Sources */,

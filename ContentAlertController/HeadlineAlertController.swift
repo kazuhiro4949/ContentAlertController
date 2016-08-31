@@ -44,8 +44,6 @@ public class HeadlineAlertController: AlertController {
         view.contentView.setNeedsLayout()
         view.contentView.layoutIfNeeded()
         view.frame.size = view.contentView.bounds.size
-        self.init(customView: view, preferredStyle: preferredStyle, config: config)
-        
         
         let session = NSURLSession(configuration: .defaultSessionConfiguration(), delegate: nil, delegateQueue: .mainQueue())
         session.dataTaskWithURL(imageUrl) { (data, resp, error) in
@@ -54,7 +52,9 @@ public class HeadlineAlertController: AlertController {
             }
             
             view.imageView.image = UIImage(data: data)
-            }
-            .resume()
+        }
+        .resume()
+        
+        self.init(customView: view, preferredStyle: preferredStyle, config: config)
     }
 }

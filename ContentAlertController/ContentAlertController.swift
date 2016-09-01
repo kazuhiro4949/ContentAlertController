@@ -8,6 +8,7 @@
 
 import UIKit
 
+
 public class ContentAlertController: AlertController {
     public convenience init(customView: UIView, preferredStyle: Style, config: AlertControllerConfiguration? = nil) {
         self.init(nibName: nil, bundle: nil)

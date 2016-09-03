@@ -26,8 +26,8 @@ class CompactAlertViewController: UIViewController {
             customView.translatesAutoresizingMaskIntoConstraints = false
             contentScrollView.addSubview(customView)
             customViewSizeRatio = customView.frame.height / customView.frame.width
-            customView.widthAnchor.constraintEqualToAnchor(contentScrollView.widthAnchor).active = true
-            customView.heightAnchor.constraintEqualToAnchor(contentScrollView.widthAnchor, multiplier: customViewSizeRatio).active = true
+            customView.widthAnchor.constraintEqualToConstant(preferredWidth).active = true
+            customView.heightAnchor.constraintEqualToConstant(preferredWidth * customViewSizeRatio).active = true
             customView.topAnchor.constraintEqualToAnchor(contentScrollView.topAnchor).active = true
             customView.leadingAnchor.constraintEqualToAnchor(contentScrollView.leadingAnchor).active = true
             customView.bottomAnchor.constraintEqualToAnchor(contentScrollView.bottomAnchor).active = true

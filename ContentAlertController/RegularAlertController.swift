@@ -46,8 +46,6 @@ class RegularAlertController: UIViewController {
     
     
     @IBOutlet weak var alertButton: CompactAlertButton!
-    
-    var customViewSizeRatio = CGFloat(0)
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -63,9 +61,12 @@ class RegularAlertController: UIViewController {
             
             customView.translatesAutoresizingMaskIntoConstraints = false
             
-            customViewSizeRatio = customView.frame.height / customView.frame.width
-            customView.widthAnchor.constraintEqualToAnchor(contentScrollView.widthAnchor).active = true
-            customView.heightAnchor.constraintEqualToAnchor(contentScrollView.widthAnchor, multiplier: customViewSizeRatio).active = true
+            let customViewSizeRatio = customView.frame.height / customView.frame.width
+            let widthInScrollView  = style.preferredWidth
+            let heightInScrollView = style.preferredWidth * customViewSizeRatio
+            customView.widthAnchor.constraintEqualToConstant(widthInScrollView).active = true
+            customView.heightAnchor.constraintEqualToConstant(heightInScrollView).active = true
+            
             customView.topAnchor.constraintEqualToAnchor(contentScrollView.topAnchor).active = true
             customView.leadingAnchor.constraintEqualToAnchor(contentScrollView.leadingAnchor).active = true
             customView.bottomAnchor.constraintEqualToAnchor(contentScrollView.bottomAnchor).active = true
@@ -122,22 +123,6 @@ class RegularAlertController: UIViewController {
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
     }
-
-    override func viewWillTransitionToSize(size: CGSize, withTransitionCoordinator coordinator: UIViewControllerTransitionCoordinator) {
-        super.viewWillTransitionToSize(size, withTransitionCoordinator: coordinator)
-        coordinator.animateAlongsideTransition(
-            { [weak self] (cotext) in
-                guard let customView = self?.customView, contentScrollView = self?.contentScrollView else {
-                    return
-                }
-                
-                let customViewSizeRatio = customView.frame.height / customView.frame.width
-                self?.customViewSizeRatio = customViewSizeRatio
-                customView.heightAnchor.constraintEqualToAnchor(contentScrollView.widthAnchor, multiplier: customViewSizeRatio).active = true
-            }
-        ) { (_) in }
-
-    }
     
     var contentScrollViewHeight = CGFloat(0)
     
@@ -178,7 +163,7 @@ class RegularAlertController: UIViewController {
     
     private func alightHeight() {
         let preferedTableHeight = tableVC?.preferredContentSize.height ?? CGFloat(0)
-        let preferedScrollHeight = style.preferredWidth * customViewSizeRatio
+        let preferedScrollHeight = customView?.frame.height ?? CGFloat(0)
         
         let upperBoundTableHeight = upperLimitHeight * 3 / 8
         let upperBoundScrollHeight = upperLimitHeight - upperBoundTableHeight

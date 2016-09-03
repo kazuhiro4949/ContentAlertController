@@ -16,7 +16,6 @@ class CompactAlertViewController: UIViewController {
     }
     
     let preferredWidth: CGFloat = 270
-    var customViewSizeRatio = CGFloat(0)
     var configuration: AlertControllerConfiguration?
     
     var customView: UIView? {
@@ -25,7 +24,7 @@ class CompactAlertViewController: UIViewController {
 
             customView.translatesAutoresizingMaskIntoConstraints = false
             contentScrollView.addSubview(customView)
-            customViewSizeRatio = customView.frame.height / customView.frame.width
+            let customViewSizeRatio = customView.frame.height / customView.frame.width
             customView.widthAnchor.constraintEqualToConstant(preferredWidth).active = true
             customView.heightAnchor.constraintEqualToConstant(preferredWidth * customViewSizeRatio).active = true
             customView.topAnchor.constraintEqualToAnchor(contentScrollView.topAnchor).active = true
@@ -105,8 +104,9 @@ class CompactAlertViewController: UIViewController {
         }
         get {
             contentScrollView.layoutIfNeeded()
-            let height = min(preferredWidth * customViewSizeRatio, upperLimitHeight)
-            return CGSize(width: preferredWidth, height: height + buttonContainerView.bounds.height)
+            let scrollViewHeight = min(customView?.bounds.height ?? CGFloat(0), upperLimitHeight)
+            let buttonHeight = actions.isEmpty ? CGFloat(0) : buttonContainerView.bounds.height
+            return CGSize(width: preferredWidth, height: scrollViewHeight + buttonHeight)
         }
     }
 }

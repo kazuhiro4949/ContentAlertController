@@ -22,9 +22,6 @@
                             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             <subviews>
-                                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tfH-K9-7fk">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="555"/>
-                                </scrollView>
                                 <view opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="Dm6-pj-Vhr">
                                     <rect key="frame" x="0.0" y="555" width="600" height="45"/>
                                     <subviews>
@@ -165,7 +162,6 @@
                                         <constraint firstItem="9yK-5w-B3s" firstAttribute="leading" secondItem="RWz-j2-qPH" secondAttribute="trailing" id="ZQw-8l-bad"/>
                                         <constraint firstAttribute="bottom" secondItem="RWz-j2-qPH" secondAttribute="bottom" id="dNJ-eg-aLh"/>
                                         <constraint firstItem="LrL-Na-Sfr" firstAttribute="top" secondItem="Dm6-pj-Vhr" secondAttribute="top" id="eAh-iB-tj5"/>
-                                        <constraint firstItem="9yK-5w-B3s" firstAttribute="top" secondItem="Dm6-pj-Vhr" secondAttribute="top" id="ep2-DP-9An"/>
                                         <constraint firstItem="RWz-j2-qPH" firstAttribute="top" secondItem="Dm6-pj-Vhr" secondAttribute="top" id="h9E-yt-Xda"/>
                                         <constraint firstAttribute="trailing" secondItem="hOt-W8-8eC" secondAttribute="trailing" id="pEg-dS-WM2"/>
                                         <constraint firstItem="hOt-W8-8eC" firstAttribute="leading" secondItem="Dm6-pj-Vhr" secondAttribute="leading" id="pmv-AV-k4J"/>
@@ -173,20 +169,19 @@
                                         <constraint firstAttribute="height" constant="45" id="tCx-TY-pWm"/>
                                         <constraint firstAttribute="bottom" secondItem="LrL-Na-Sfr" secondAttribute="bottom" id="xT7-KV-2ve"/>
                                     </constraints>
-                                    <variation key="default">
-                                        <mask key="constraints">
-                                            <exclude reference="ep2-DP-9An"/>
-                                        </mask>
-                                    </variation>
                                 </view>
+                                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tfH-K9-7fk">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="555"/>
+                                </scrollView>
                             </subviews>
                             <constraints>
                                 <constraint firstAttribute="bottom" secondItem="Dm6-pj-Vhr" secondAttribute="bottom" id="1IO-Fs-L7t"/>
                                 <constraint firstAttribute="trailing" secondItem="tfH-K9-7fk" secondAttribute="trailing" id="F8U-p3-zNl"/>
                                 <constraint firstItem="tfH-K9-7fk" firstAttribute="top" secondItem="HaF-pv-sO8" secondAttribute="top" id="Hq4-v7-FM3"/>
-                                <constraint firstItem="Dm6-pj-Vhr" firstAttribute="top" secondItem="tfH-K9-7fk" secondAttribute="bottom" id="KPo-Tk-uf7"/>
+                                <constraint firstItem="Dm6-pj-Vhr" firstAttribute="top" secondItem="tfH-K9-7fk" secondAttribute="bottom" priority="750" id="KPo-Tk-uf7"/>
                                 <constraint firstItem="Dm6-pj-Vhr" firstAttribute="leading" secondItem="HaF-pv-sO8" secondAttribute="leading" id="iKZ-Kz-49N"/>
                                 <constraint firstItem="tfH-K9-7fk" firstAttribute="leading" secondItem="HaF-pv-sO8" secondAttribute="leading" id="knb-a0-Gpy"/>
+                                <constraint firstAttribute="bottom" secondItem="tfH-K9-7fk" secondAttribute="bottom" priority="250" id="oTp-gW-DAu"/>
                                 <constraint firstAttribute="trailing" secondItem="Dm6-pj-Vhr" secondAttribute="trailing" id="tgG-Sn-8MX"/>
                             </constraints>
                         </view>
@@ -203,8 +198,8 @@
             </view>
             <connections>
                 <outlet property="buttonContainerView" destination="Dm6-pj-Vhr" id="Ner-fa-U1t"/>
-                <outlet property="buttonContainerViewHeightConstraint" destination="tCx-TY-pWm" id="pRN-Bm-dGY"/>
                 <outlet property="contentScrollView" destination="tfH-K9-7fk" id="PBR-mi-dHa"/>
+                <outlet property="contentScrollViewBottomToParentConstraint" destination="oTp-gW-DAu" id="Bdb-m2-cm8"/>
                 <outlet property="leftButtonTrailingConstraint" destination="7ls-nN-37K" id="6mk-X3-bkn"/>
                 <outletCollection property="alertButtonLabel" destination="Hih-ns-JG6" collectionClass="NSMutableArray" id="tCv-3D-chR"/>
                 <outletCollection property="alertButtonLabel" destination="HXA-lr-AkC" collectionClass="NSMutableArray" id="FdW-jN-8KC"/>

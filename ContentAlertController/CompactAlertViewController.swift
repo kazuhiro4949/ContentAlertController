@@ -39,18 +39,20 @@ class CompactAlertViewController: UIViewController {
         didSet {
             switch actions.count {
             case 0:
-                buttonContainerViewHeightConstraint.constant = 0
+                contentScrollViewBottomToParentConstraint.priority = 751
                 leftButtonTrailingConstraint.priority = 999
+                buttonContainerView.hidden = true
             case 1:
-                buttonContainerViewHeightConstraint.constant = 45
+                contentScrollViewBottomToParentConstraint.priority = 250
                 leftButtonTrailingConstraint.priority = 999
                 let action = actions.first
                 alertButtonLabel.first?.text = action?.title
                 alertButtonLabel.first?.textColor = action?.configuration.textColor
                 alertButtonLabel.first?.backgroundColor = action?.configuration.backgroundColor
                 alertButtonLabel.first?.font = action?.configuration.font
+                buttonContainerView.hidden = false
             case 2:
-                buttonContainerViewHeightConstraint.constant = 45
+                contentScrollViewBottomToParentConstraint.priority = 250
                 leftButtonTrailingConstraint.priority = 250
                 alertButtonLabel.enumerate().forEach({ (index, label) in
                     label.text = actions[index].title
@@ -58,6 +60,7 @@ class CompactAlertViewController: UIViewController {
                     label.backgroundColor = actions[index].configuration.backgroundColor
                     label.font = actions[index].configuration.font
                 })
+                buttonContainerView.hidden = false
             default:
                 assertionFailure("")
             }
@@ -68,8 +71,8 @@ class CompactAlertViewController: UIViewController {
     @IBOutlet weak var buttonContainerView: UIView!
 
     @IBOutlet weak var leftButtonTrailingConstraint: NSLayoutConstraint!
-    @IBOutlet weak var buttonContainerViewHeightConstraint: NSLayoutConstraint!
     
+    @IBOutlet weak var contentScrollViewBottomToParentConstraint: NSLayoutConstraint!
 
     @IBOutlet var alertButtonLabel: [UILabel]!
     

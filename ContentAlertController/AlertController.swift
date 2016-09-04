@@ -36,6 +36,12 @@ public class AlertController: UIViewController, UIViewControllerTransitioningDel
         self.transitioningDelegate = self
     }
     
+
+    /**
+     Attaches an action object to the alert or action sheet.
+     
+     - parameter action: The action object to display as part of the alert. Actions are displayed as buttons in the alert. The action object provides the button text and the action to be performed when that button is tapped.
+     */
     public func addAction(action: AlertAction) {
         factory?.actions.append(action)
     }
@@ -75,7 +81,14 @@ public class AlertController: UIViewController, UIViewControllerTransitioningDel
     }
 }
 
+
 public extension AlertController {
+    /**
+     Constants indicating the type of alert to display.
+     
+     - ActionSheet: ActionSheet UI like UIAlertControllerStyle
+     - Alert:       Alert UI like UIAlertControllerStyle
+     */
     public enum Style {
         case ActionSheet
         case Alert

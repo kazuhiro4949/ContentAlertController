@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "ContentAlertController"
-  s.version          = "0.24.0"
+  s.version          = "0.25.0"
   s.summary          = "content customizable AlertController"
 
   s.description      = <<-DESC

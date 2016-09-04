@@ -37,7 +37,7 @@
                     </subviews>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     <constraints>
-                        <constraint firstItem="SDe-Rd-nHu" firstAttribute="top" secondItem="z3C-1u-dAQ" secondAttribute="bottom" constant="16" id="0sA-7h-2ro"/>
+                        <constraint firstItem="SDe-Rd-nHu" firstAttribute="top" secondItem="z3C-1u-dAQ" secondAttribute="bottom" constant="8" id="0sA-7h-2ro"/>
                         <constraint firstItem="mU5-d1-sK5" firstAttribute="top" secondItem="cRF-wt-i86" secondAttribute="top" constant="24" id="ASH-uh-KRz"/>
                         <constraint firstItem="mU5-d1-sK5" firstAttribute="leading" secondItem="z3C-1u-dAQ" secondAttribute="trailing" constant="8" id="BIu-un-e9c"/>
                         <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="SDe-Rd-nHu" secondAttribute="bottom" constant="16" id="DeR-OT-KmF"/>

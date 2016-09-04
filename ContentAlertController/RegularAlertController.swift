@@ -41,6 +41,7 @@ class RegularAlertController: UIViewController {
     @IBOutlet weak var cancelContainerViewHeightConstraint: NSLayoutConstraint!
     @IBOutlet weak var cancelButtonLabel: UILabel!
     @IBOutlet weak var contentContainerViewBottomConstraint: NSLayoutConstraint!
+    @IBOutlet weak var contentContainerBottomToParentConstraint: NSLayoutConstraint!
     
     @IBOutlet weak var cancelButtonHighlightView: UIVisualEffectView!
     
@@ -105,9 +106,11 @@ class RegularAlertController: UIViewController {
                         cancel.handler?(cancel)
                     })
                 }
-                contentContainerViewBottomConstraint.active = true
+                cancelContainerView.hidden = false
+                contentContainerBottomToParentConstraint.priority = 250
             } else {
-                contentContainerViewBottomConstraint.active = false
+                cancelContainerView.hidden = true
+                contentContainerBottomToParentConstraint.priority = 751
             }
             let others = actions.filter({ (action: AlertAction) -> Bool in
                 return action.style != .Cancel

@@ -144,10 +144,10 @@
                             <constraint firstItem="HfF-Gx-0LI" firstAttribute="top" secondItem="PWF-aV-QuL" secondAttribute="top" id="6FG-IW-of5"/>
                             <constraint firstItem="CPZ-9Q-wHu" firstAttribute="top" secondItem="A13-EF-umP" secondAttribute="bottom" id="B7w-F2-v3O"/>
                             <constraint firstItem="A13-EF-umP" firstAttribute="leading" secondItem="PWF-aV-QuL" secondAttribute="leading" id="EBu-Ej-Y90"/>
-                            <constraint firstItem="CPZ-9Q-wHu" firstAttribute="top" secondItem="HfF-Gx-0LI" secondAttribute="bottom" priority="999" id="WQl-Vm-hOd"/>
+                            <constraint firstItem="CPZ-9Q-wHu" firstAttribute="top" secondItem="HfF-Gx-0LI" secondAttribute="bottom" priority="250" id="WQl-Vm-hOd"/>
                             <constraint firstAttribute="trailing" secondItem="HfF-Gx-0LI" secondAttribute="trailing" id="cH7-eX-nfD"/>
                             <constraint firstItem="HfF-Gx-0LI" firstAttribute="leading" secondItem="PWF-aV-QuL" secondAttribute="leading" id="iLb-qh-wdQ"/>
-                            <constraint firstItem="A13-EF-umP" firstAttribute="top" secondItem="HfF-Gx-0LI" secondAttribute="bottom" id="lOj-wA-k58"/>
+                            <constraint firstItem="A13-EF-umP" firstAttribute="top" secondItem="HfF-Gx-0LI" secondAttribute="bottom" priority="750" id="lOj-wA-k58"/>
                         </constraints>
                     </view>
                     <connections>
@@ -156,6 +156,7 @@
                         <outlet property="cancelButtonLabel" destination="6Pj-Nt-ooA" id="R9K-Cy-AyR"/>
                         <outlet property="cancelContainerView" destination="Zqc-tq-uiV" id="TCg-Hm-YNj"/>
                         <outlet property="cancelContainerViewHeightConstraint" destination="Kq5-rf-oDW" id="iAw-QL-LBb"/>
+                        <outlet property="contentContainerBottomToParentConstraint" destination="WQl-Vm-hOd" id="azD-ca-uBL"/>
                         <outlet property="contentContainerView" destination="HfF-Gx-0LI" id="jtN-D4-XxH"/>
                         <outlet property="contentContainerViewBottomConstraint" destination="lOj-wA-k58" id="01L-Zo-Mlq"/>
                         <outlet property="contentScrollView" destination="fQZ-82-Epe" id="bEF-Xa-dhY"/>

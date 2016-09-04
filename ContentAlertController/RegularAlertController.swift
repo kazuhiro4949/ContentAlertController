@@ -93,10 +93,7 @@ class RegularAlertController: UIViewController {
             contentContainerView.layer.masksToBounds = true
             cancelContainerView.hidden = true
         case .ActionSheet:
-            let cancel = actions.filter({ (action: AlertAction) -> Bool in
-                return action.style == .Cancel
-            }).first
-            if let cancel = cancel {
+            if let cancel = cancelAction {
                 cancelButtonLabel.text = cancel.title
                 cancelButtonLabel.textColor = cancel.configuration.textColor
                 cancelButtonLabel.font = cancel.configuration.font
@@ -157,7 +154,7 @@ class RegularAlertController: UIViewController {
             
             let tableViewHeight = tableContainerViewHeightConstraint.constant ?? CGFloat(0)
             let separatorHeight = separatorView.bounds.height
-            let cancelButtonHeight = (style == .ActionSheet) ? cancelContainerViewHeightConstraint.constant : CGFloat(0)
+            let cancelButtonHeight = (style == .ActionSheet && cancelAction != nil) ? cancelContainerViewHeightConstraint.constant : CGFloat(0)
             
             let alertViewHeight = tableViewHeight + contentScrollViewHeight + separatorHeight + cancelButtonHeight
             return CGSize(width: style.preferredWidth, height: alertViewHeight)
@@ -191,5 +188,11 @@ class RegularAlertController: UIViewController {
                 tableContainerViewHeightConstraint.constant = upperBoundTableHeight
             }
         }
+    }
+    
+    private var cancelAction: AlertAction? {
+        return actions.filter({ (action: AlertAction) -> Bool in
+            return action.style == .Cancel
+        }).first
     }
 }

@@ -46,6 +46,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2B26D10C1D7BE9EC00B90C80 /* ContentAlertController.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = ContentAlertController.playground; sourceTree = "<group>"; };
 		6E0067FB1D77051A00D57328 /* ContentAlertController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentAlertController.swift; sourceTree = "<group>"; };
 		6E74F60B1D66B4C900A1BF63 /* CompactAlertViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CompactAlertViewController.xib; path = Assets/CompactAlertViewController.xib; sourceTree = "<group>"; };
 		6E74F60D1D66B4D700A1BF63 /* FlyerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FlyerView.xib; path = Assets/FlyerView.xib; sourceTree = "<group>"; };
@@ -99,6 +100,7 @@
 		6EB566B11D5F88E5004702C1 = {
 			isa = PBXGroup;
 			children = (
+				2B26D10C1D7BE9EC00B90C80 /* ContentAlertController.playground */,
 				6EB566BD1D5F88E5004702C1 /* ContentAlertController */,
 				6EB566C91D5F88E5004702C1 /* ContentAlertControllerTests */,
 				6EB566BC1D5F88E5004702C1 /* Products */,
